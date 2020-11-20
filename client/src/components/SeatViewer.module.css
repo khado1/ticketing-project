@@ -1,0 +1,41 @@
+.container {
+  display: flex;
+  flex-direction: column;
+
+  width: 300px;
+  align-self: center;
+
+  padding: 36px 36px 0;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.row:not(:last-child) {
+  margin-bottom: 12px;
+}
+
+.seat {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background: #f4f4f4;
+
+  width: 36px;
+  height: 36px;
+}
+
+.seat:not(:last-child) {
+  margin-right: 12px;
+}
+
+.seat.taken {
+  background: rgba(255, 0, 0, 0.8);
+  color: #fff;
+}
+
+.seat.selected {
+  background: rgba(0, 136, 11, 0.8);
+  color: #fff;
+}
